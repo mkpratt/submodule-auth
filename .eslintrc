@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "@strv/javascript/environments/react/v16",
+    "@strv/javascript/environments/react/optional",
+    "@strv/javascript/coding-styles/recommended",
+    "@strv/javascript/coding-styles/fixable"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "global-require": 0,
+    "id-length": [1, { "min": 2 , "max": 40, "properties": "never"}],
+    "import/no-named-as-default": 0,
+    "max-len": 0,
+    "no-compare-neg-zero": 1,
+    "no-process-env": 0,
+    "no-restricted-syntax": 0,
+    "no-underscore-dangle": 0,
+    "operator-linebreak": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/void-dom-elements-no-children": 1,
+    "require-yield": 1,
+    "template-tag-spacing": 0,
+    "valid-jsdoc": 0,
+    "multiline-comment-style": 0,
+    "padding-line-between-statements": 0,
+    "import/group-exports": 0,
+    "no-inline-comments": 0,
+    "no-warning-comments": 0
+  },
+  "settings": {
+    "import/resolver": { "node": { "paths": ["app"] } },
+    "import/parser": "babel-eslint"
+  }
+}
